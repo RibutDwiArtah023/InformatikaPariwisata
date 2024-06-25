@@ -32,16 +32,15 @@ with st.container():
         st.markdown('<h1 style = "text-align: center;"> <b>Informatika Pariwisata</b> </h1>', unsafe_allow_html = True)
         st.markdown('')
         st.markdown("# Judul Project ")
-        st.info("Analisis Sentimen Review Terhadap Cita Rasa Warung Amboina Bangkalan menggunakan metode Random Forest dan Term Frequency-Inverse Document Frequency")
+        st.info("Analisis Sentimen Review Terhadap Pelayanan Hotel Jakarta menggunakan metode Random Forest dan Term Frequency-Inverse Document Frequency")
         st.markdown("# Dataset ")
-        st.info("Data yang digunakan pada laporan ini adalah data ulasan cita rasa Warung Amboina. Data yang diambil dari Warung Amboina tersebut sebanyak lebih kurang 500 data dengan data yang diambil dalam waktu terdekat.")
+        st.info("Data yang digunakan pada laporan ini adalah data ulasan pelayanan hotel Jakarta. Data yang diambil dari Warung Amboina tersebut sebanyak lebih kurang 500 data dengan data yang diambil dalam waktu terdekat.")
         st.markdown("# Metode Usulan ")
         st.info("Random Forest")
         
     elif choose == "Implementation":
         st.title("Informatika Pariwisata")
-        st.write("Amallia Tiara Putri - 200411100025")
-        st.write("Diah Kamalia - 200411100061")
+        st.write("Ribut Dwi Artah - 200411100023")
         desc, dataset, preprocessing, classification, implementation = st.tabs(["Deskripsi Data", "Dataset", "Preprocessing", "Classification", "Implementation"])
         with desc:
             st.write("# About Dataset")
@@ -66,7 +65,7 @@ with st.container():
 
             st.write("## Repository Github")
             st.write(" Click the link below to access the source code")
-            repo = "https://github.com/diahkamalia/informatikapariwisata"
+            repo = "https://github.com/RibutDwiArtah023/InformatikaPariwisata"
             st.markdown(f'[ Link Repository Github ]({repo})')
         with dataset:
             st.write("""# Load Dataset""")
@@ -156,7 +155,7 @@ with st.container():
             rf_eval = classification_report(y_test, y_pred,output_dict = True)
             rf_eval_df = pd.DataFrame(rf_eval).transpose()
             st.header("Accuracy Result")
-            st.info(f"Akurasi cita rasa dari Warung Amboina menggunakan metode Random Forest adalah : **{rf_accuracy}%** ")
+            st.info(f"Akurasi pelayanan hotel Jakarta menggunakan metode Random Forest adalah : **{rf_accuracy}%** ")
 #
         with implementation:
             st.write("# Implementation")
