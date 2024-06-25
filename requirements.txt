@@ -1,0 +1,8 @@
+streamlit
+streamlit-extras
+streamlit-option-menu
+bokeh
+# joblib==1.2.0
+scikit-learn
+nltk
+sastrawi
