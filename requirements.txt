@@ -1,8 +1,13 @@
 streamlit>=1.15.1,<2.0.0
-streamlit-extras==0.2.4
-streamlit-option-menu==0.3.2
-bokeh==3.0.2
-# joblib==1.2.0
-scikit-learn==1.1.3
-nltk==3.5
-sastrawi==1.0.1
+nltk
+scikit-learn
+streamlit-extras
+streamlit-option-menu
+markdownlit
+streamlit-camera-input-live
+streamlit-card
+streamlit-embedcode
+streamlit-faker
+streamlit-keyup
+streamlit-toggle-switch
+streamlit-vertical-slider
